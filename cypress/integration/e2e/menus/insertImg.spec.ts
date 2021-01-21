@@ -54,6 +54,7 @@ describe('插入网络图片', () => {
                 const img = $img.get(0)
                 expect(img.src).to.eq(imgUrl)
                 expect(img.alt).to.eq(alt)
+                expect(img.dataset.href).to.eq(encodeURIComponent(clickUrl))
             })
     })
 })
